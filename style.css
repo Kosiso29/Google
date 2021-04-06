@@ -72,6 +72,7 @@ a:hover {
     margin: auto;
     margin-top: 50px;
 }
+
 .mainDiv input {
     width: 80%;
     max-width: 500px;
@@ -98,6 +99,10 @@ a:hover {
     /* margin-bottom: -30px; */
     /* height: 150px;
     width: 150px; */
+}
+
+.Mic img {
+    width: 15px;
 }
 
 .mainDiv>input:hover {
@@ -159,6 +164,7 @@ span {
 footer div {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0px 30px;
 }
 
@@ -173,4 +179,88 @@ footer p a {
     padding: 0 15px;
     font-size: 14px;
     color: grey;
+}
+
+@media only screen and (max-width: 823px) {
+    .Mic {
+        top: -35px;
+        left: 45%;
+    }
+    
+    .mainDiv button {
+        margin-top: 0px;
+    }
+        
+    .mainDiv input {
+        padding: 7px 10%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    nav ul {
+        padding: 3px;
+    }
+    
+    li {
+        padding: 0px 3px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+    
+    .mainDiv p img {
+        width: 230px;
+    }
+    
+    .mainDiv input {
+        font-size: 12px;
+        line-height: 30px;
+        text-indent: 20px;
+    }
+    
+    .Mic {
+        left: 42%;
+        top: -32px;
+    }
+
+    .Mic img{
+        width: 12px;
+    }
+    
+    .mainDiv button {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+    
+    .mainDiv p {
+        margin-top: 28px;
+        font-size: 10px;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+    
+    footer p a {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .mainDiv p img {
+        width: 160px;
+    }
+    
+    .mainDiv input {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .mainDiv button {
+        padding: 7px 12px;
+        font-size: 9px;
+    }
 }
